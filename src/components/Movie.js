@@ -4,19 +4,6 @@ import "./Movie.css";
 
 function Movie({ id, title, summary, year, genres, rating, poster }) {
   return (
-    /*<Link
-      to={{
-        pathname: `/movie/${id}`,
-        state: {
-          year,
-          title,
-          summary,
-          genres,
-          rating,
-          poster,
-        },
-      }}
-    >*/
       <div className="movie">
         <img src={poster} alt={title} title={title} />
         <div className="movie__description">
@@ -31,7 +18,6 @@ function Movie({ id, title, summary, year, genres, rating, poster }) {
           <h5 className="movie__rating">⭐️{rating}</h5>
         </div>
       </div>
-    //</Link>
   );
 }
 
